@@ -4,143 +4,274 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/output.css" />
-    <title>my portfolio</title> <style> body { font-family: "IRANSans", sans-serif; }</style>
+    <title>my portfolio</title>
+    <style>
+      body {
+        font-family: "IRANSans", sans-serif;
+      }
+    </style>
   </head>
- 
+  <body class="bg-[#1e1e1f] text-gray-100 font-sans">
+    <!-- aboute me -->
 
-</head>
-<body class="bg-[#1e1e1f] text-gray-100">
+    <div
+      class="min-h-screen flex flex-col lg:flex-row items-center justify-center space-x-10 p-8"
+    >
+      <!-- Sidebar card -->
+      <aside
+        class="bg-[#1e1e1f] md:max-w-1/3 rounded-2xl p-6 border border-gray-700 mb-3"
+      >
+        <!-- avatar -->
+        <div class="flex flex-col items-center">
+          <div
+            class="w-32 h-32 rounded-2xl overflow-hidden bg-gray-700 flex items-center justify-center ring-1 ring-gray-500"
+          >
+            <img
+              src="./src/pa.jpg"
+              alt="avatar"
+              class="w-full h-full object-cover"
+            />
+          </div>
 
-   <!-- about me -->
+          <h2 class="mt-5 text-center text-2xl font-extrabold leading-tight">
+            Parvaneh<br />Zarini
+          </h2>
 
-  <div class="min-h-screen flex items-center justify-center space-x-10 p-8">
-    <!-- Sidebar card -->
-    <aside class="w-[17rem] bg-[#1e1e1f] rounded-2xl p-6 border border-gray-700 ml-10">
-      <!-- avatar -->
-      <div class="flex flex-col items-center">
-        <div class="w-32 h-32 rounded-2xl overflow-hidden bg-gray-700 flex items-center justify-center ring-1 ring-gray-500">
-          <img src="./src/pa.jpg" alt="avatar"
-               class="w-full h-full object-cover"/>
+          <span
+            class="mt-3 inline-block bg-gray-700/60 text-sm px-3 py-1 rounded-full text-gray-300"
+          >
+            Graduate
+          </span>
         </div>
 
-        <h2 class="mt-5 text-center text-2xl font-extrabold leading-tight">Parvaneh<br/>Zarini</h2>
+        <div class="border-t border-gray-700 my-6"></div>
 
-        <span class="mt-3 inline-block bg-gray-700/60 text-sm px-3 py-1 rounded-full text-gray-300">
-          Graduate
-        </span>
-      </div>
+        <!-- info list -->
+        <ul class="space-y-4">
+          <li class="flex items-center gap-4">
+            <div
+              class="w-10 h-10 p-2 flex items-center justify-center bg-gray-700 rounded-xl ring-1 ring-white/5"
+            >
+              <!-- mail icon -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5 text-purple-400"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-mail-icon lucide-mail"
+              >
+                <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+              </svg>
+            </div>
+            <div class="flex-1">
+              <p class="text-xs text-gray-400">EMAIL</p>
+              <p class="truncate">pari.it.1997@gmail.com</p>
+            </div>
+          </li>
 
-      <div class="border-t border-gray-700 my-6"></div>
+          <li class="flex items-center gap-4">
+            <div
+              class="w-10 h-10 p-2 flex items-center justify-center bg-gray-700 rounded-xl ring-1 ring-white/5"
+            >
+              <!-- phone icon -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5 text-purple-400"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-smartphone-icon lucide-smartphone"
+              >
+                <rect width="14" height="20" x="5" y="2" rx="2" ry="2" />
+                <path d="M12 18h.01" />
+              </svg>
+            </div>
+            <div class="flex-1">
+              <p class="text-xs text-gray-400">PHONE</p>
+              <p>+98 901 264-1649</p>
+            </div>
+          </li>
 
-      <!-- info list -->
-      <ul class="space-y-4">
-        <li class="flex items-center gap-4">
-          <div class="w-10 h-10 p-2 flex items-center justify-center  bg-gray-700 rounded-xl ring-1 ring-white/5">
-            <!-- mail icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
-          </div>
-          <div class="flex-1">
-            <p class="text-xs text-gray-400">EMAIL</p>
-            <p class="truncate">pari.it.1997@gmail.com
+          <li class="flex items-center gap-4">
+            <div
+              class="w-10 h-10 p-2 flex items-center justify-center bg-gray-700 rounded-xl ring-1 ring-white/5"
+            >
+              <!-- calendar -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5 text-purple-400"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M8 7V3m8 4V3M3 11h18M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                />
+              </svg>
+            </div>
+            <div class="flex-1">
+              <p class="text-xs text-gray-400">BIRTHDAY</p>
+              <p>May 31, 1997</p>
+            </div>
+          </li>
 
-</p>
-          </div>
-        </li>
+          <li class="flex items-center gap-4">
+            <div
+              class="w-10 h-10 p-2 flex items-center justify-center bg-gray-700 rounded-xl ring-1 ring-white/5"
+            >
+              <!-- location -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5 text-purple-400"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-map-pin-icon lucide-map-pin"
+              >
+                <path
+                  d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <div class="flex-1">
+              <p class="text-xs text-gray-400">LOCATION</p>
+              <p>Tehran, Iran</p>
+            </div>
+          </li>
+        </ul>
 
-        <li class="flex items-center gap-4">
-          <div class="w-10 h-10 p-2 flex items-center justify-center bg-gray-700 rounded-xl ring-1 ring-white/5">
-            <!-- phone icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-smartphone-icon lucide-smartphone"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
-          </div>
-          <div class="flex-1">
-            <p class="text-xs text-gray-400">PHONE</p>
-            <p>+98 901 264-1649</p>
-          </div>
-        </li>
+        <div class="border-t border-gray-700 my-6"></div>
 
-        <li class="flex items-center gap-4">
-          <div class="w-10 h-10 p-2 flex items-center justify-center bg-gray-700 rounded-xl ring-1 ring-white/5">
-            <!-- calendar -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3M3 11h18M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+        <!-- social icons -->
+        <div class="flex items-center justify-center gap-4">
+          <a
+            href="https://github.com/parvane-zarini"
+            class="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-gray-600 transition"
+          >
+            <!-- github -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-github-icon lucide-github"
+            >
+              <path
+                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+              />
+              <path d="M9 18c-4.51 2-5-2-7-2" />
             </svg>
-          </div>
-          <div class="flex-1">
-            <p class="text-xs text-gray-400">BIRTHDAY</p>
-            <p>May 31, 1997</p>
-          </div>
-        </li>
+          </a>
 
-        <li class="flex items-center gap-4">
-          <div class="w-10 h-10 p-2 flex items-center justify-center bg-gray-700 rounded-xl ring-1 ring-white/5">
-            <!-- location -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
-          </div>
-          <div class="flex-1">
-            <p class="text-xs text-gray-400">LOCATION</p>
-            <p>Tehran, Iran</p>
-          </div>
-        </li>
-      </ul>
+          <a
+            href="https://www.linkedin.com/in/parvanezarini/"
+            class="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-gray-600 transition"
+          >
+            <!-- linkedin -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-linkedin-icon lucide-linkedin"
+            >
+              <path
+                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+              />
+              <rect width="4" height="12" x="2" y="9" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
 
-      <div class="border-t border-gray-700 my-6"></div>
+          <a
+            href="#"
+            class="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-gray-600 transition"
+          >
+            <!-- instagram -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-instagram-icon lucide-instagram"
+            >
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+            </svg>
+          </a>
+        </div>
+      </aside>
 
-      <!-- social icons -->
-      <div class="flex items-center justify-center gap-4">
-        <a href="https://github.com/parvane-zarini" class="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-gray-600 transition">
-          <!-- github -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github-icon lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
-        </a>
+      <main
+        class="md:w-2/5 bg-[#1e1e1f] rounded-2xl text-sm p-6 border border-gray-700"
+      >
+        <article class="sm:w-full md:w-">
+          <header>
+            <h2 class="text-2xl">About me</h2>
+            <hr class="w-10 mt-2 border-[3px] rounded-4xl border-purple-600" />
+          </header>
+          <section class="about-text">
+            <p class="my-4">
+              I’m Parvane Zarini, an Information Technology Engineering graduate
+              with research interests spanning machine learning, trustworthy AI,
+              explainable AI (XAI), human-computer interaction, large language
+              models, and AI applications in digital marketing.
+            </p>
 
-        <a href="https://www.linkedin.com/in/parvanezarini/" class="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-gray-600 transition">
-          <!-- linkedin -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin-icon lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
-        </a>
+            <p class="my-4">
+              My recent work includes research on algorithmic transparency in
+              predictive maintenance, fuzzy expert systems for nutrition
+              planning, and the use of metaverse technologies for
+              waste-management education, several of which have been published
+              or accepted for presentation.
+            </p>
 
-        <a href="#" class="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-gray-600 transition">
-          <!-- instagram -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram-icon lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-        </a>
-      </div>
+            <p class="my-4">
+              I also have hands-on experience building AI-driven projects from
+              predictive modeling to eye-tracking activity classification as
+              well as developing user-centered digital solutions and web
+              platforms. My academic goal is to contribute to the creation of
+              intelligent systems that are transparent, reliable, and aligned
+              with real human needs.
+            </p>
+          </section>
+        </article>
 
-    </aside>
+        <section></section>
+      </main>
+    </div>
 
-    <main class="w-95 bg-[#1e1e1f] rounded-2xl text-sm p-6 border border-gray-700">
-      
-      <article class="">
-        <header>
-          <h2 class="text-2xl">About me</h2>
-        </header>
-        <section class="about-text">
-
-    
-    
-    <p class="my-5">I’m Parvane Zarini, an Information Technology Engineering graduate with research interests spanning machine learning, trustworthy AI, explainable AI (XAI), human-computer interaction, large language models, and AI applications in digital marketing.</p>
-    
-    
-    <p class="my-5">My recent work includes research on algorithmic transparency in predictive maintenance, fuzzy expert systems for nutrition planning, and the use of metaverse technologies for waste-management education, several of which have been published or accepted for presentation.</p>
-    
-    
-    
-    <p class="my-5">I also have hands-on experience building AI-driven projects from predictive modeling to eye-tracking activity classification as well as developing user-centered digital solutions and web platforms. My academic goal is to contribute to the creation of intelligent systems that are transparent, reliable, and aligned with real human needs.</p>
-    
-    
-    
-    
-
-  </section>
-      </article>
-    </main>
-
-
-  </div>
-
-  
-  
-
-
-   
-
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
